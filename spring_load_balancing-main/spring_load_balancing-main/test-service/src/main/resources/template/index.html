@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Service</title>
+</head>
+<body>
+    <h1>Test Service</h1>
+    <form th:action="@{/test}" method="get">
+        <button type="submit">Send Test Request</button>
+    </form>
+    <div th:if="${result}" th:text="${result}"></div>
+</body>
+</html>
